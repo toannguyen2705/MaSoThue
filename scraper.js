@@ -16,7 +16,6 @@ const scrapeCategory = async (browser, url) =>
       const currentUrl = page.url();
       console.log(currentUrl);
 
-      //tạo page nhập chữ kế toán, click tìm kiếm, get current url, gán lên url phái trên
       for (let k = 1; k <= 2; k++) {
         if (k === 1) {
           page.goto(currentUrl);
